@@ -5,7 +5,7 @@ import { TbMenu3 } from "react-icons/tb";
 
 const Navbar = () => {
     return (
-        <div className="navbar shadow-sm text-white">
+        <div className="navbar shadow-sm text-white mb-28 ">
             <div className="navbar-start">
                 <div className='flex items-center gap-3'>
                     <div className='bg-gradient-to-t from-[#246965] to-black p-1 rounded-lg'>
@@ -20,7 +20,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-end lg:flex gap-4">
-                <BasicBtn text={'C'} />
+                <BasicBtn text={'C'} navbar={true}/>
                 <div className="dropdown">
                     <div
                         tabIndex={0}

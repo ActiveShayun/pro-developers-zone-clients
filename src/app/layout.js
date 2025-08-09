@@ -21,11 +21,26 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-black">
       <body
-        className={`max-w-7xl mx-auto bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`max-w-[1340px] mx-auto  bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          backgroundColor: "#0d0f12", // Base dark background
+          backgroundImage: `
+    radial-gradient(ellipse at left top, rgba(0, 255, 255, 0.2), transparent 60%),
+    radial-gradient(ellipse at right top, rgba(0, 255, 255, 0.2), transparent 60%)
+  `,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "50% 40%",
+          backgroundPosition: "left top, right top"
+        }}
+
+
+
+
+
       >
-        <Navbar/>
+        <Navbar />
         {children}
       </body>
-    </html>
+    </html >
   );
 }
