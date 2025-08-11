@@ -4,10 +4,10 @@ import SubBtn from '../shared/subbtn/SubBtn';
 
 const SoftwareService = () => {
     return (
-        <div className='grid grid-cols-1 gap-4 lg:grid-cols-5
-         items-start justify-between lg:min-h-[500px] w-full border border-red-800'>
+        <div className='grid grid-cols-1 lg:gap-4 lg:grid-cols-5
+         items-start justify-between lg:h-[500px] w-ful'>
             {/* Column 1 */}
-            <div className='lg:col-span-1 justify-between w-ful h-full flex lg:flex-col lg:pt-20 lg:pb-4 text-white border border-red-800'>
+            <div className='lg:col-span-1 w-full h-full flex lg:flex-col flex-row lg:justify-between gap-3 lg:gap-0 lg:pt-20 lg:pb-4 text-white mb-5'>
                 <div className='lg:relative'>
                     <SubBtn text={'Website Development'} />
                     <div className='hidden lg:block w-[30px] absolute right-3  
@@ -24,7 +24,7 @@ const SoftwareService = () => {
             </div>
 
             {/* Column 2 */}
-            <div className='col-span-3 py-4 lg:py-7 h-full  w-full relative z-10
+            <div className='col-span-3 py-4 lg:py-7 h-full w-full relative z-10
              rounded-2xl'>
                 {/* Overlay blur background */}
                 <div className='bg-[#3c7f81] opacity-35 shadow-[#3c7f81] absolute w-full 
@@ -64,7 +64,7 @@ const SoftwareService = () => {
             </div>
 
             {/* Column 3 */}
-            <div className='col-span-1 flex lg:flex-col flex-row  items-end justify-between h-full w-full lg:pt-20 lg:pb-4 text-white'>
+            <div className='col-span-1 flex lg:flex-col flex-row items-center lg:items-end lg:justify-between gap-3 lg:gap-0 h-full w-full lg:pt-20 lg:pb-4 text-white mt-4'>
                 <div className='lg:relative'>
                     <SubBtn text={'Website Development'} />
                     <div className='hidden lg:block w-[30px] absolute -left-8  
